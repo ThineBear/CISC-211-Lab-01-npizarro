@@ -40,6 +40,9 @@ asmFunc:
     # add 42 to the current value of r0, and place the result in r0
     ADD r0, r0, 42
     
+    /*subtract r1 from r0 and place result in r2  this is MY EDIT \/      */
+    sub r2, r0, r1 
+   
     # restore the caller's registers, as required by the ARM calling convention
     pop {r4-r11,LR}
 
